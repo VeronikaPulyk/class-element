@@ -1,0 +1,107 @@
+a {
+	color: green;
+
+}
+a:hover {
+	color: red;
+	text-decoration: none;
+	padding-left: 20px;
+}
+a:active {
+	background: black;
+}
+a:visited {
+	color: orange;
+}
+.one {
+	width: 100px;
+	height: 100px;
+	background: orange;
+	transition: all ease 3s;
+}
+.one:hover {
+	background: red;
+	border-radius: 100%;
+}
+img {
+	transition: all cubic-bezier(0.78, 0.22, 0, 1.1) 3s;
+}
+
+img:hover {
+	transform: rotate(960deg);
+}
+.two, .three {
+	width: 30px;
+	height: 50px;
+}
+.two {
+	background: red;
+	transition: all ease 5s;
+}
+.three {
+	background: green;	
+	transition: all ease 5s;
+}
+.two:hover , .three:hover {
+	width: 100px;
+}
+.menu {
+	width: 150px;
+	padding: 10px;
+	background: yellow;
+	position: relative;
+}
+.submenu {
+	background: red;
+	height: 0;
+	transition: all ease 500ms;
+	position: absolute;
+	overflow: hidden;
+	width: 100%;
+
+}
+.menu:hover .submenu {
+	height: 200px;
+}
+.mmenu {
+	width: 200px;
+	height: 100vh;
+	position: fixed;
+	left: 0;
+	top: 0;
+	margin-left: -180px;
+	background: lime;
+	z-index: 999;
+	transition: all ease 500ms;
+}
+.mmenu:hover {
+	margin-left: 0;
+}
+.test {
+	width: 100px;
+	height: 100px;
+	background: orange;
+	margin: 20px;
+	position: relative;
+}
+.test::before {
+	content:"\2622";
+}
+.test::after {
+	content: "";
+	display: block;
+	width: 20px;
+	height: 20px;
+	background: red;
+	position: absolute;
+	right: -20px;
+	bottom: -20px;
+}
+p::after {
+	content: "* * * * *";
+	display: block;
+	width: 100%;
+	text-align: center;
+	margin: 20px;
+
+}
